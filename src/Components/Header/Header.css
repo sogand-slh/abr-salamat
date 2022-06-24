@@ -1,0 +1,39 @@
+.left-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* height: var(--parent-height); */
+}
+.left-content::after {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 75px;
+  left: 0px;
+  position: absolute;
+  background-size: 35%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255)
+    ),
+    url("../../assets/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+.text-content {
+  display: flex;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 5rem;
+  left: 45%;
+  justify-content: center;
+  flex-direction: column;
+}
